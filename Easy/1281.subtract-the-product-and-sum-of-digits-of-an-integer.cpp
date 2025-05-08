@@ -5,11 +5,21 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    int subtractProductAndSum(int n) {
-        
+    int subtractProductAndSum(int n)
+    {
+        int product = 1;
+        int sum = 0;
+        while (n > 0)
+        {
+            int newNum = n % 10;
+            product *= newNum;
+            sum += newNum;
+            n /= 10;
+        }
+        return product - sum;
     }
 };
 // @lc code=end
-
