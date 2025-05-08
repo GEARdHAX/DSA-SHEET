@@ -3,8 +3,11 @@
  *
  * [191] Number of 1 Bits
  */
+// ⌚ Time Complexity : O(log n)
+// 🚀 Space Complexity : O(1);
+// ❓ Link : https://leetcode.com/problems/number-of-1-bits/description/
+//  @lc code=start
 
-// @lc code=start
 class Solution
 {
 public:
