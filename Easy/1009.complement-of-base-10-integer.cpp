@@ -3,10 +3,10 @@
  *
  * [1009] Complement of Base 10 Integer
  */
-//⌚ Time Complexity : O(log N)
-//🚀 Space Complexity : O(1)
-//❓ Link : 
-// @lc code=start
+// ⌚ Time Complexity : O(log N)
+// 🚀 Space Complexity : O(1)
+// ❓ Link :https://leetcode.com/problems/complement-of-base-10-integer/description/
+//  @lc code=start
 class Solution
 {
 public:
@@ -18,7 +18,6 @@ public:
         {
             return 1;
         }
-
         while (m != 0)
         {
             mask = (mask << 1) | 1;
