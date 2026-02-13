@@ -18,6 +18,8 @@ public:
         {
             count += n & 1; // Check if the last bit is 1
             n >>= 1;
+            n &= (n - 1); // Brian Kernighan's Algorithm: clears the least significant set bit
+            count++;
         }
         return count;
     }
